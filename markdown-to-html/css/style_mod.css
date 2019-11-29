@@ -1,0 +1,280 @@
+* {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Helvetica, arial, sans-serif;
+    color: #333;
+    background-color: #99ada9;
+}
+
+#container {
+    background-color: #d0d0d0;
+    width: 1000px;
+    padding-top: 20px:
+}
+
+header {
+    background-color: #969393;
+    width: 250px;
+    float: left;
+    margin-left: 50px;
+    margin-top: 11px;
+}
+
+header p {
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+h2,
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #0e646f;
+    /*#517476;*/
+
+}
+
+h1 {
+    font-family: 'Space Mono', monospace;
+    color: #b7e227;
+    /*b7e227  #a1e227*/
+    font-size: 24px;
+    margin-bottom: 9px;
+    text-align: left;
+    margin-left: 20px;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+
+i {
+    letter-spacing: 1px;
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 0px 71px -8px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0px 0px 71px -8px rgba(0, 0, 0, 0.36);
+    box-shadow: 0px 0px 71px -8px rgba(0, 0, 0, 0.36);
+}
+
+img {
+    padding: 25px 0;
+}
+
+hr {
+    /* border: 1px solid #f5f5f0; */
+}
+
+h2,
+h3 {
+    margin-bottom: 6px;
+}
+
+#table {
+    width: 600px;
+    float: left;
+    margin-left: 49px;
+    padding-top: 27px;
+}
+
+table,
+th,
+td {
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+    padding: 10px;
+    margin-top: -18px;
+    background-color: #6c6c6c;
+}
+
+table thead {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+table tr td {
+    color: #cccbcb;
+}
+
+table ul li {
+    list-style-type: none;
+}
+
+table ul {
+    /*display: inline;*/
+}
+
+.hide {
+    list-style-type: none;
+}
+
+#list {
+    /*
+    position: relative;
+    top: -10px:
+    */
+}
+
+
+.li {
+    padding-top: 10px;
+    margin-left: -8px;
+    color: #535e6f;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.li_nested {
+    padding-top: 6px;
+    margin-left: -23px;
+    list-style-type: none;
+}
+
+.li_nested:before {
+    content: "- ";
+}
+
+section {
+    float: left;
+    margin: 6px 18px;
+}
+
+#hobbies {
+    width: 220px;
+    margin-left: 49px;
+}
+
+#count,
+#funny,
+#td {
+    width: 342px;
+}
+
+.article {
+    margin-top: 8px;
+}
+
+span {
+    letter-spacing: -2px;
+}
+
+a {
+    color: #1282E2;
+    font-size: 15px;
+}
+
+#spacer-footer {
+    height: 24px;
+    clear: left;
+}
+
+footer {
+    font-size: 15px;
+    background-color: #000;
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+a:link {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#checkbox {
+    float: left;
+}
+
+
+#first-li {
+    margin-top: -3px;
+}
+
+#checkbox-contained {
+    /*display: none;*/
+
+}
+
+.squaredThree {
+    width: 5px;
+    position: relative;
+    margin-bottom: -20px;
+}
+
+#check1 {
+    left: -37px;
+    top: -10px;
+}
+
+#check1::before {
+    content: 'yes';
+    position: absolute;
+    top: 0px;
+    left: 26px;
+}
+
+#check2::before {
+    content: 'no';
+    position: absolute;
+    top: 0px;
+    left: 26px;
+}
+
+#check2 {
+    left: 30px;
+    top: -9px;
+}
+
+/* from https://codepen.io/bbodine1/pen/novBm */
+.squaredThree label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, #222222 0%, #45484d 100%);
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.5), 0px 1px 0px rgba(255, 255, 255, 0.4);
+}
+
+.squaredThree label:after {
+    content: '';
+    width: 9px;
+    height: 5px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border: 3px solid #fcfff4;
+    border-top: none;
+    border-right: none;
+    background: transparent;
+    opacity: 0;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.squaredThree label:hover::after {
+    opacity: 0.3;
+}
+
+.squaredThree input[type=checkbox] {
+    visibility: hidden;
+}
+
+.squaredThree input[type=checkbox]:checked + label:after {
+    opacity: 1;
+}
