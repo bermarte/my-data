@@ -1,0 +1,60 @@
+* {
+    /*background-color: #bfbbbb;*/
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: monospace;
+
+}
+body{
+    background-color: #a2abbf;
+   background-image: url( "../imgs/backgrounds-blank-blue-953214.jpg");
+}
+
+#container {  
+    width: 650px;
+    height: 250px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /*background-color: #7181a5;*/
+    background-image: radial-gradient(#8090b5, #556281);
+    display: flex;
+    align-items: center;
+
+}
+
+.photo {
+    float: left;
+    margin-right: 4px;
+    width: 200px;
+}
+
+.fn {
+    clear: left;
+}
+
+.vcard,
+.adr,
+.geo,
+.latitude,
+.fn,
+.org,
+.email,
+.street-address,
+.locality,
+.region,
+.postal-code,
+.country-name,
+.tel,
+.category,
+.latitude,
+.longitude,
+.url {
+    background-color: #c7c7c7;
+    width: 500px;
+}
+
+.vcard {}
